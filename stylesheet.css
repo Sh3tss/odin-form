@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://dus6dayednven.cloudfront.net/app/uploads/2021/05/3.Nico-Ferreyra.jpg");
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 150px 30px rgba(0,0,0,0.3);
+}
+.logo {
+  height: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+}
+.logoBand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.3);
+  z-index: 1;
+}
+.logoInfo {
+ position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+#logoImage {
+  height: 120px;
+  width: auto;
+}
+#logtitle {
+  font-size: 3.5em;
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+}
+.form {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.inforBlock {
+  height: auto;
+  width: 100%;
+  background-color: lightgray;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.inforBlock form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px 30px;
+  align-items: center;
+  justify-content: start;
+}
+.inforBlock form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #666;
+}
+.inforBlock form label input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.inforBlock form label input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+  outline: none;
+}
+
+.inforBlock form button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: start;
+  background-color: #02ffb3;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.inforBlock form button[type="submit"]:hover {
+  background-color: #027e73;
+  transform: translateY(-2px);
+}
+.inforBlock form button[type="submit"]:active {
+  transform: translateY(0);
+}
